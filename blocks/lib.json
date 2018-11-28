@@ -1,0 +1,14 @@
+{
+  "name": "Tea",
+  "groups": [
+    {
+      "id": "main",
+      "label": "Main Blocks",
+      "position": 0
+    }
+  ],
+  "blocks": [{
+      "name": "mainblock",
+      "url": "%theme_url%/blocks/mainblock/"
+    }]
+}

@@ -1,0 +1,40 @@
+{
+    "groups": "main",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "block_id",
+        "label": "Block's id",
+        "type": "text"
+    },{
+        "name": "header",
+        "label": "Block's title",
+        "type": "text"
+    }, {
+      "name": "text",
+      "label": "Text",
+      "type": "text",
+      "placeholder": "text"
+    },{
+      "name": "btn_text",
+      "label": "Button text",
+      "type": "text",
+      "placeholder": "Text"
+    },{
+      "name": "btn_text_2",
+      "label": "Button text",
+      "type": "text",
+      "placeholder": "Text"
+    },{
+         "name": "image",
+         "label": "Image",
+         "type": "image"
+    }],
+    "defaults":  { 
+        "block_id": "home",
+        "header": "We Are Creative Agency",
+        "text": "<p>Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl. Nullam sit amet magna in magna gravida vehicula. Mauris tincidunt sem sed arcu. Nunc posuere.</p>",
+        "btn_text": "Get Started!",
+        "btn_text_2": "Learn more",
+        "image": "%block_url%/assets/img/background1.jpg"
+    }
+}

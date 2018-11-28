@@ -96,7 +96,21 @@ function tea_content_width() {
 	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
 	$GLOBALS['content_width'] = apply_filters( 'tea_content_width', 640 );
 }
+
 add_action( 'after_setup_theme', 'tea_content_width', 0 );
+/* Init qoob libs */
+add_filter( 'qoob_libs', 'tea_add_theme_lib', 10, 2 );
+if ( ! function_exists( 'tea_add_theme_lib' ) ) {
+  /**
+   * Adding lib in qoob libs
+   *
+   * @param array $qoob_libs Array with url to qoob lib.
+   */
+  function tea_add_theme_lib( $qoob_libs ) {
+    array_push( $qoob_libs, get_template_directory() . '/blocks/lib.json' );
+    return $qoob_libs;
+  }
+}
 
 /**
  * Register widget area.
@@ -131,7 +145,7 @@ add_action( 'widgets_init', 'tea_widgets_init' );
  */
 function tea_scripts() {
 	wp_enqueue_style( 'tea-style', get_stylesheet_uri() );
-  wp_enqueue_style( 'main-style', get_stylesheet_directory_uri(). '/css/main-style.css', array("tea-style"));
+  wp_enqueue_style( 'main-style', get_stylesheet_directory_uri(). '/css/style.css', array("tea-style"));
 	wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri(). '/css/bootstrap.min.css', array("tea-style") );
 	wp_enqueue_style( 'owl-carousel', get_stylesheet_directory_uri(). '/css/owl.carousel.css', array("tea-style")  );
 	wp_enqueue_style( 'owl-carousel-default', get_stylesheet_directory_uri(). '/css/owl.theme.default.css', array("tea-style") );
