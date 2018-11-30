@@ -145,9 +145,8 @@ add_action( 'widgets_init', 'tea_widgets_init' );
  */
 function tea_scripts() {
 	wp_enqueue_style( 'tea-style', get_stylesheet_uri() );
-  wp_enqueue_style( 'main-style', get_stylesheet_directory_uri(). '/css/style.css', array("tea-style"));
 	wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri(). '/css/bootstrap.min.css', array("tea-style") );
-	wp_enqueue_style( 'owl-carousel', get_stylesheet_directory_uri(). '/css/owl.carousel.css', array("tea-style")  );
+	wp_enqueue_style( 'main-style', get_stylesheet_directory_uri(). '/css/style.css', array("tea-style", 'bootstrap'));
 	wp_enqueue_style( 'owl-carousel-default', get_stylesheet_directory_uri(). '/css/owl.theme.default.css', array("tea-style") );
   wp_enqueue_style( 'magnific-popup', get_stylesheet_directory_uri(). '/css/magnific-popup.css', array("tea-style") );
   wp_enqueue_style( 'font-awesome', get_stylesheet_directory_uri(). '/css/font-awesome.min.css', array("tea-style") );

@@ -21,14 +21,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<!-- Header -->
-<!-- 	<header id="home"> -->
-		<!-- Background Image -->
-<!-- 		<div class="bg-img" style="background-image: url('/img/background1.jpg');">
-			<div class="overlay"></div> -->
-<!-- 		</div> -->
-		<!-- /Background Image -->
-
 		<!-- Nav -->
 		<nav id="nav" class="navbar nav-transparent">
 
@@ -56,10 +48,12 @@
         $args = array(
         'theme_location'=> 'menu-1',
         'menu_class'=> 'main-nav nav navbar-nav navbar-right', 
-        'items_wrap'=> '<ul id="%1$s" class="%2$s">%3$s</ul>',        
+        'items_wrap'=> '<ul id="%1$s" class="%2$s">%3$s</ul>',   
+        'container' => false,
+        'walker'=> new Tea_Navwalker(), 
+        // 'walker'=> new Tea_Navwalker(),
         );
-           wp_nav_menu($args);
-        ?>
+           wp_nav_menu($args);?>
 
 			</div>
 		</nav>

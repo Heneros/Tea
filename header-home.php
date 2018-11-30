@@ -22,7 +22,6 @@
 
 <body <?php body_class(); ?>>
 	<!-- Header -->
-
 		<!-- Nav -->
 		<nav id="nav" class="navbar nav-transparent">
 
@@ -50,7 +49,8 @@
         $args = array(
         'theme_location'=> 'menu-1',
         'menu_class'=> 'main-nav nav navbar-nav navbar-right', 
-        'items_wrap'=> '<ul id="%1$s" class="%2$s">%3$s</ul>',        
+        'items_wrap'=> '<ul id="%1$s" class="%2$s">%3$s</ul>',   
+        'walker'=> new Tea_Navwalker(), 
         );
            wp_nav_menu($args);
         ?>
