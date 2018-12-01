@@ -1,0 +1,57 @@
+<!-- About -->
+<div id="{{block_id}}" class="section md-padding">
+
+	<!-- Container -->
+	<div class="container">
+
+		<!-- Row -->
+		<div class="row">
+
+			<!-- Section header -->
+			<div class="section-header text-center">
+				<h2 class="title">{{header}}</h2>
+			</div>
+			<!-- /Section header -->
+     {{#each_with_sort boxes "order"}}
+			<!-- about <--></-->
+			<div class="col-md-4">
+				<div class="about">
+					<i class="{{icon}}"></i>
+					<h3>{{title}}</h3>
+					<p>{{{text}}}</p>
+					<a href="{{btn_link}}">{{btn_text}}</a>
+				</div>
+			</div>
+		{{/each_with_sort}}
+			<!-- /about -->
+
+			{{!-- <!-- about -->
+			<div class="col-md-4">
+				<div class="about">
+					<i class="fa fa-magic">{{icon}}</i>
+					<h3>{{title}}</h3>
+					<p>{{text}}</p>
+					<a href="{{text_link}}">{{text_links}}</a>
+				</div>
+			</div>
+			<!-- /about -->
+
+			<!-- about -->
+			<div class="col-md-4">
+				<div class="about">
+					<i class="fa fa-mobile">{{icon}}</i>
+					<h3>{{title}}</h3>
+					<p>{{text}}</p>
+					<a href="{{text_link}}">{{text_links}}</a>
+				</div>
+			</div>
+			<!-- /about --> --}}
+
+		</div>
+		<!-- /Row -->
+
+	</div>
+	<!-- /Container -->
+
+</div>
+<!-- /About -->

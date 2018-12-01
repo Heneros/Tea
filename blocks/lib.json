@@ -1,14 +1,20 @@
 {
   "name": "Tea",
-  "groups": [
-    {
+  "groups": [{
       "id": "main",
       "label": "Main Blocks",
       "position": 0
+    },{
+      "id": "iconbox",
+      "label": "Icon Box",
+      "position": 1
     }
   ],
   "blocks": [{
       "name": "mainblock",
       "url": "%theme_url%/blocks/mainblock/"
+    },{
+      "name": "iconbox",
+      "url": "%theme_url%/blocks/iconbox/"
     }]
 }

@@ -10,7 +10,7 @@
  */
 
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -23,6 +23,7 @@
 <body <?php body_class(); ?>>
 	<!-- Header -->
 		<!-- Nav -->
+<header id="home">
 		<nav id="nav" class="navbar nav-transparent">
 
 			<div class="container">
