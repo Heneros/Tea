@@ -23,7 +23,7 @@
 <body <?php body_class(); ?>>
 	<!-- Header -->
 		<!-- Nav -->
-<header id="home">
+
 		<nav id="nav" class="navbar nav-transparent">
 
 			<div class="container">
@@ -32,8 +32,8 @@
 					<!-- Logo -->
            
 						<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>" >
-							<img class="logo" src="/img/logo.png" alt="logo">
-							<img class="logo-alt" src="/img/logo-alt.png" alt="logo">
+							<img class="logo" id="" src="/img/logo.png" alt="logo">
+							<img class="logo-alt" id="" src="/img/logo-alt.png" alt="logo">
 <!-- 							Logo -->
 						</a>
 					<!-- /Logo -->
@@ -49,9 +49,10 @@
 				        <?php  
         $args = array(
         'theme_location'=> 'menu-1',
-        'menu_class'=> 'main-nav nav navbar-nav navbar-right', 
-        'items_wrap'=> '<ul id="%1$s" class="%2$s">%3$s</ul>',   
-        'walker'=> new Tea_Navwalker(), 
+        'container' => false,
+        'menu_class'=> 'main-nav nav navbar-nav navbar-right ', 
+        'items_wrap'  => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+        'walker' => new Tea_Navwalker(),
         );
            wp_nav_menu($args);
         ?>
