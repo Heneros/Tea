@@ -32,8 +32,8 @@
 					<!-- Logo -->
            
 						<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>" >
-							<img class="logo" id="" src="/img/logo.png" alt="logo">
-							<img class="logo-alt" id="" src="/img/logo-alt.png" alt="logo">
+							<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+<!-- 							<img class="logo-alt" id="" src="/img/logo-alt.png" alt="logo"> -->
 <!-- 							Logo -->
 						</a>
 					<!-- /Logo -->

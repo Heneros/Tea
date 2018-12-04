@@ -50,7 +50,7 @@
         'container' => false,
         'menu_class'=> 'main-nav nav navbar-nav navbar-right ', 
         'items_wrap'  => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-        'walker' => new Tea_Navwalker(),
+        'walker' => '',
         );
            wp_nav_menu($args);?>
 

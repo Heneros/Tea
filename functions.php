@@ -79,6 +79,7 @@ if ( ! function_exists( 'tea_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
+
 	}
 endif;
 add_action( 'after_setup_theme', 'tea_setup' );
@@ -199,7 +200,4 @@ require get_template_directory() . '/inc/tea-navwalker.php';
 /**
  * Load Jetpack compatibility file.
  */
-if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
-}
-

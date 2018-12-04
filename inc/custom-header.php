@@ -18,10 +18,10 @@
  */
 function tea_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'tea_custom_header_args', array(
-		'default-image'          => '',
+		'default-image'          => get_template_directory_uri() . '/img/logo.png',
 		'default-text-color'     => '000000',
-		'width'                  => 1000,
-		'height'                 => 250,
+		'width'                  => 160,
+		'height'                 => 80,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'tea_header_style',
 	) ) );
@@ -41,7 +41,7 @@ if ( ! function_exists( 'tea_header_style' ) ) :
 		 * If no custom options for text are set, let's bail.
 		 * get_header_textcolor() options: Any hex value, 'blank' to hide text. Default: add_theme_support( 'custom-header' ).
 		 */
-		if ( get_theme_support( 'custom-header', 'default-text-color' ) === $header_text_color ) {
+		if ( get_theme_support( 'custom-header',  'default-text-color' ) === $header_text_color ) {
 			return;
 		}
 
