@@ -22,9 +22,11 @@ function tea_custom_header_setup() {
 		'default-text-color'     => '000000',
 		'width'                  => 160,
 		'height'                 => 80,
+		'uploads'       => true,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'tea_header_style',
 	) ) );
+
 }
 add_action( 'after_setup_theme', 'tea_custom_header_setup' );
 

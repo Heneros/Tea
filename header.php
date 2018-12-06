@@ -30,7 +30,9 @@
 					<!-- Logo -->
            
 						<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>" >
-							<img class="logo" src="/img/logo.png" alt="logo">
+							<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+<!-- 							<img class="logo-alt" id="" src="/img/logo-alt.png" alt="logo"> -->
+<!-- 							Logo -->
 							<img class="logo-alt" src="/img/logo-alt.png" alt="logo">
 <!-- 							Logo -->
 						</a>
@@ -40,19 +42,21 @@
 					<div class="nav-collapse">
 						<span></span>
 					</div>
+
+
 					<!-- /Collapse nav button -->
 				</div>
-
-				<!--  Main navigation  -->
-		<!-- Nav -->				        <?php  
+							<?php  
         $args = array(
         'theme_location'=> 'menu-1',
         'container' => false,
         'menu_class'=> 'main-nav nav navbar-nav navbar-right ', 
         'items_wrap'  => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-        'walker' => '',
+        'walker' => new Tea_Navwalker(),
         );
            wp_nav_menu($args);?>
+				<!--  Main navigation  -->
+		<!-- Nav -->		
 
 			</div>
 		</nav>
