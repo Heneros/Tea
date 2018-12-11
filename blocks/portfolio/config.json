@@ -8,7 +8,7 @@
       "type": "text"
     },{
         "name": "header",
-        "label": "Block's title",
+        "label": "Block's header",
         "type": "text",
         "placeholder": "Header"
     },{
@@ -18,60 +18,68 @@
       "viewType": "flip",
       "settings": [
         {
-          "name": "title",
-          "label": "Title",
-          "type": "text",
-          "placeholder": "Title"
-        },
-        {
-          "name": "icon",
-          "label": "Icon",
-          "type": "icon"
-        },
-        {
+          "name": "image",
+          "label": "Image",
+          "type": "image"
+        },{
           "name": "text",
           "label": "Text",
           "type": "textarea",
           "placeholder": "Text"
-        },
-        {
-          "name": "btn_text",
-          "label": "Button text",
+        },{
+          "name": "title",
+          "label": "Title",
           "type": "text",
-          "placeholder": "Button text"
-        },
-        {
-          "name": "btn_link",
-          "label": "Button link",
+          "placeholder": "Title"
+        },{
+          "name": "link",
+          "label": "Link",
           "type": "text",
-          "placeholder": "Button link"
+          "placeholder": "Link"
         }
       ]
     }
   ],
   "defaults": {
-    "block_id": "about",
-    "header": "Welcome to Website",
-    "boxes": [{
-        "title": "Fully Customizible",
-        "icon": "fa fa-cogs",
-        "text": "<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>",
-        "btn_text": "Read more",
-        "btn_link": "#",
+    "block_id": "portfolio",
+    "header": "Featured Works",
+    "works": [{
+        "title": "Lorem ipsum dolor",
+        "image": "%block_url(medialib)%/assets/img/work1.jpg",
+        "text": "Category",
+        "link": "#",
         "order": 1
     },{
-        "title": "Awesome Features",
-        "icon": "fa fa-magic",
-        "text": "<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>",
-        "btn_text": "Read more",
-        "btn_link": "#",
+        "title": "Lorem ipsum dolor",
+        "image": "%block_url(medialib)%/assets/img/work2.jpg",
+        "text": "Category",
+        "link": "#",
         "order": 2
     },{
-        "title": "Fully Responsive",
-        "icon": "fa fa-mobile",
-        "text": "<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>",        "btn_text": "Read more",
-        "btn_link": "#",
+        "title": "Lorem ipsum dolor",
+        "image": "%block_url(medialib)%/assets/img/work3.jpg",
+        "text": "Category",
+        "link": "#",
         "order": 3
-    }]
+    },{
+        "title": "Lorem ipsum dolor",
+        "image": "%block_url(medialib)%/assets/img/work4.jpg",
+        "text": "Category",
+        "link": "#",
+        "order": 4
+    },{
+        "title": "Lorem ipsum dolor",
+        "image": "%block_url(medialib)%/assets/img/work5.jpg",
+        "text": "Category",
+        "link": "#",
+        "order": 5
+    },{
+        "title": "Lorem ipsum dolor",
+        "image": "%block_url(medialib)%/assets/img/work6.jpg",
+        "text": "Category",
+        "link": "#",
+        "order": 6
+    }
+  ]
   }
 }
