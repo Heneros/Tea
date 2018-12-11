@@ -8,6 +8,14 @@
       "id": "iconbox",
       "label": "Icon Box",
       "position": 1
+    },{
+      "id": "medialib",
+      "label": "Media lib",
+      "position": 2
+    },{
+      "id": "portfolio",
+      "label": "Portfolio",
+      "position": 3
     }
   ],
   "blocks": [{
@@ -16,5 +24,12 @@
     },{
       "name": "iconbox",
       "url": "%theme_url%/blocks/iconbox/"
-    }]
+    },{
+      "name": "medialib",
+      "url": "%theme_url%/blocks/medialib/"
+    },{
+      "name": "portfolio",
+      "url": "%theme_url%/blocks/portfolio/"
+    }
+  ]
 }

@@ -1,0 +1,77 @@
+{
+  "groups": "portfolio",
+  "template": "template.hbs",
+  "settings": [
+    {
+      "name": "block_id",
+      "label": "Block's id",
+      "type": "text"
+    },{
+        "name": "header",
+        "label": "Block's title",
+        "type": "text",
+        "placeholder": "Header"
+    },{
+      "name": "works",
+      "label": "Portfolio works",
+      "type": "accordion",
+      "viewType": "flip",
+      "settings": [
+        {
+          "name": "title",
+          "label": "Title",
+          "type": "text",
+          "placeholder": "Title"
+        },
+        {
+          "name": "icon",
+          "label": "Icon",
+          "type": "icon"
+        },
+        {
+          "name": "text",
+          "label": "Text",
+          "type": "textarea",
+          "placeholder": "Text"
+        },
+        {
+          "name": "btn_text",
+          "label": "Button text",
+          "type": "text",
+          "placeholder": "Button text"
+        },
+        {
+          "name": "btn_link",
+          "label": "Button link",
+          "type": "text",
+          "placeholder": "Button link"
+        }
+      ]
+    }
+  ],
+  "defaults": {
+    "block_id": "about",
+    "header": "Welcome to Website",
+    "boxes": [{
+        "title": "Fully Customizible",
+        "icon": "fa fa-cogs",
+        "text": "<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>",
+        "btn_text": "Read more",
+        "btn_link": "#",
+        "order": 1
+    },{
+        "title": "Awesome Features",
+        "icon": "fa fa-magic",
+        "text": "<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>",
+        "btn_text": "Read more",
+        "btn_link": "#",
+        "order": 2
+    },{
+        "title": "Fully Responsive",
+        "icon": "fa fa-mobile",
+        "text": "<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>",        "btn_text": "Read more",
+        "btn_link": "#",
+        "order": 3
+    }]
+  }
+}

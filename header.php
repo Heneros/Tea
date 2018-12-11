@@ -30,11 +30,7 @@
 					<!-- Logo -->
            
 						<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>" >
-							<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
-<!-- 							<img class="logo-alt" id="" src="/img/logo-alt.png" alt="logo"> -->
-<!-- 							Logo -->
-							<img class="logo-alt" src="/img/logo-alt.png" alt="logo">
-<!-- 							Logo -->
+      <img  src="https://gc.onliner.by/images/logo/onliner_logo.v3@2x.png?token=1543935833">
 						</a>
 					<!-- /Logo -->
 
@@ -61,7 +57,6 @@
 			</div>
 		</nav>
 		<!-- /Nav -->
-
 
 <!-- 	</header>
  -->	<!-- /Header -->
