@@ -1,0 +1,70 @@
+{
+  "groups": "offered",
+  "template": "template.hbs",
+  "settings": [{
+      "name": "block_id",
+      "label": "Block's id",
+      "type": "text"
+    },{
+        "name": "header",
+        "label": "Block's header",
+        "type": "text",
+        "placeholder": "Header"
+    },{
+      "name": "offering",
+      "label": "Offered works",
+      "type": "accordion",
+      "viewType": "flip",
+      "settings": [{
+          "name": "icon",
+          "label": "Icon",
+          "type": "icon"
+        },{
+          "name": "title",
+          "label": "Title",
+          "type": "text",
+          "placeholder": "Title"
+        },{
+          "name": "text",
+          "label": "Text",
+          "type": "text",
+          "placeholder": "text"
+        }]
+    }
+  ],
+  "defaults": {
+    "block_id": "service",
+    "header": "What we offer",
+    "offering": [{
+        "icon":  "fa fa-diamond",
+        "title": "App Development",
+        "text": "Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.",
+        "order": 1
+    },{
+        "icon":  "fa fa-rocket",
+        "title": "Graphic Design",
+        "text": "Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.",
+        "order": 2
+    },{
+        "icon":  "fa fa-cogs",
+        "title": "Creative Idear",
+        "text": "Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.",
+        "order": 3
+    },{     
+        "icon":  "fa fa-diamond",
+        "title": "Marketing",
+        "text": "Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.",
+        "order": 4
+    },{
+        "icon":  "fa fa-pencil",
+        "title": "Awesome Support",
+        "text": "Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.",
+        "order": 5
+    },{
+        "icon":  "fa fa-flask",
+        "title": "Brand Design",
+        "text": "Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.",
+        "order": 6
+    }]
+  }
+}

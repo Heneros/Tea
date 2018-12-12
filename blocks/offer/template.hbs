@@ -1,0 +1,32 @@
+<div id="{{block_id}}" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">{{header}}</h2>
+				</div>
+				<!-- /Section header -->
+         {{#each_with_sort offering "order"}}
+				<!-- service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="{{icon}}"></i>
+						<h3>{{title}}</h3>
+						<p>{{text}}</p>
+					</div>
+				</div>
+				
+		{{/each_with_sort}}
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Service -->

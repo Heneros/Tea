@@ -16,7 +16,12 @@
       "id": "portfolio",
       "label": "Portfolio",
       "position": 3
+    },{
+      "id": "offered",
+      "label": "Offered",
+      "position": 4
     }
+
   ],
   "blocks": [{
       "name": "mainblock",
@@ -30,6 +35,9 @@
     },{
       "name": "portfolio",
       "url": "%theme_url%/blocks/portfolio/"
+    },{
+      "name": "offered",
+      "url": "%theme_url%/blocks/offer/"
     }
   ]
 }

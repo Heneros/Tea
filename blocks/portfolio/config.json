@@ -13,15 +13,11 @@
         "placeholder": "Header"
     },{
       "name": "works",
-      "label": "Portfolio works",
+      "label": "works",
       "type": "accordion",
       "viewType": "flip",
       "settings": [
-        {
-          "name": "image",
-          "label": "Image",
-          "type": "image"
-        },{
+      {
           "name": "text",
           "label": "Text",
           "type": "textarea",
