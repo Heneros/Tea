@@ -1,0 +1,43 @@
+<!-- Why Choose Us -->
+	<div id="{{block_id}}" class="section md-padding bg-grey">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- why choose us content -->
+				<div class="col-md-6">
+					<div class="section-header">
+						<h2 class="title">{{header}}</h2>
+					</div>
+					<p>{{text}}</p>
+			{{#each_with_sort about "order"}}
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p>{{text}}</p>
+					</div>
+    {{/each_with_sort}}
+
+				</div>
+				<!-- /why choose us content -->
+
+				<!-- About slider -->
+				<div class="col-md-6">
+					<div id="about-slider" class="owl-carousel owl-theme">
+			{{#each_with_sort slider "order"}}
+						<img class="img-responsive" src="{{image}}" alt="">
+    {{/each_with_sort}}
+					</div>
+				</div>
+				<!-- /About slider -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Why Choose Us -->

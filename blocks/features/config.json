@@ -1,0 +1,71 @@
+{
+  "groups": "features",
+  "template": "template.hbs",
+  "settings": [
+    {
+      "name": "block_id",
+      "label": "Block's id",
+      "type": "text"
+    },{
+        "name": "header",
+        "label": "Block's header",
+        "type": "text",
+        "placeholder": "Header"
+    },{
+      "name": "text",
+      "label": "Text",
+      "type": "text",
+      "placeholder": "text"
+    },{
+      "name": "about",
+      "label": "About",
+      "type": "accordion",
+      "settings": [{
+          "name": "text",
+          "label": "Text",
+          "type": "textarea",
+          "placeholder": "Text"
+        }]
+    },{
+      "name": "slider",
+      "label": "Slider",
+      "type": "slider",
+      "settings": [{
+         "name": "image",
+         "label": "Image",
+         "type": "image"
+        }]
+    }
+  ],
+  "defaults": {
+    "block_id": "features",
+    "header": "Why Choose Us",
+    "text":  "Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris. Ultrices sagittis orci a scelerisque purus.",
+    "about": [{
+        "text": "Quis varius quam quisque id diam vel quam elementum.",
+        "order": 1
+    },{
+        "text": "Mauris augue neque gravida in fermentum.",
+        "order": 2
+    },{
+        "text": "Orci phasellus egestas tellus rutrum.",
+        "order": 3
+    },{
+        "text": "Nec feugiat nisl pretium fusce id velit ut tortor pretium.",
+        "order": 4
+    }],
+    "slider":[{
+       "image": "%block_url(medialib)%/assets/img/about1.jpg",
+       "order": 1
+    },{
+      "image": "%block_url(medialib)%/assets/img/about2.jpg",
+      "order": 2
+    },{
+      "image": "%block_url(medialib)%/assets/img/about1.jpg",
+      "order": 3
+    },{
+      "image": "%block_url(medialib)%/assets/img/about2.jpg",
+      "order": 4
+    }]
+  }
+}

@@ -20,6 +20,10 @@
       "id": "offered",
       "label": "Offered",
       "position": 4
+    },{
+      "id": "features",
+      "label": "Features",
+      "position": 5
     }
 
   ],
@@ -38,6 +42,9 @@
     },{
       "name": "offered",
       "url": "%theme_url%/blocks/offer/"
+    },{
+      "name": "features",
+      "url": "%theme_url%/blocks/features/"
     }
   ]
 }
