@@ -23,18 +23,18 @@
       "settings": [{
           "name": "text",
           "label": "Text",
-          "type": "textarea",
+          "type": "text",
           "placeholder": "Text"
         }]
     },{
       "name": "slider",
       "label": "Slider",
-      "type": "slider",
-      "settings": [{
-         "name": "image",
-         "label": "Image",
-         "type": "image"
-        }]
+      "type": "accordion",
+      "settings":[{
+          "name": "image",
+          "label": "Image",
+          "type": "image"
+      }]
     }
   ],
   "defaults": {
@@ -54,7 +54,7 @@
         "text": "Nec feugiat nisl pretium fusce id velit ut tortor pretium.",
         "order": 4
     }],
-    "slider":[{
+      "slider":[{
        "image": "%block_url(medialib)%/assets/img/about1.jpg",
        "order": 1
     },{

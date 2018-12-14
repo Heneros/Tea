@@ -34,7 +34,16 @@
 		"src": "%block_url%/assets/img/work6.jpg",
 		"tags": ["bg", "portfolio"],
 		"pack": "tea"
-	}
-
+	},{
+		"type": "image",
+		"src": "%block_url%/assets/img/abou1.jpg",
+		"tags": ["image", "about"],
+		"pack": "tea"
+	},{
+		"type": "image",
+		"src": "%block_url%/assets/img/about2.jpg",
+		"tags": ["image", "about"],
+		"pack": "tea"
+	},
 ]
 }
