@@ -41,41 +41,40 @@
     "header": "Featured Works",
     "works": [{
         "title": "Lorem ipsum dolor",
-        "image": "%block_url(medialib)%/assets/img/work1.jpg",
+        "image": "%block_url%/img/work1.jpg",
         "text": "Category",
         "link": "#",
         "order": 1
     },{
         "title": "Lorem ipsum dolor",
-        "image": "%block_url(medialib)%/assets/img/work2.jpg",
+        "image": "%block_url%/img/work2.jpg",
         "text": "Category",
         "link": "#",
         "order": 2
     },{
         "title": "Lorem ipsum dolor",
-        "image": "%block_url(medialib)%/assets/img/work3.jpg",
+        "image": "%block_url%/img/work3.jpg",
         "text": "Category",
         "link": "#",
         "order": 3
     },{
         "title": "Lorem ipsum dolor",
-        "image": "%block_url(medialib)%/assets/img/work4.jpg",
+        "image": "%block_url%/img/work4.jpg",
         "text": "Category",
         "link": "#",
         "order": 4
     },{
         "title": "Lorem ipsum dolor",
-        "image": "%block_url(medialib)%/assets/img/work5.jpg",
+        "image": "%block_url%/img/work5.jpg",
         "text": "Category",
         "link": "#",
         "order": 5
     },{
         "title": "Lorem ipsum dolor",
-        "image": "%block_url(medialib)%/assets/img/work6.jpg",
+        "image": "%block_url%/img/work6.jpg",
         "text": "Category",
         "link": "#",
         "order": 6
-    }
-  ]
+    }]
   }
 }

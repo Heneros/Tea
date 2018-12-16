@@ -9,13 +9,9 @@
       "label": "Icon Box",
       "position": 1
     },{
-      "id": "medialib",
-      "label": "Media lib",
-      "position": 2
-    },{
       "id": "portfolio",
       "label": "Portfolio",
-      "position": 3
+      "position": 2
     },{
       "id": "offered",
       "label": "Offered",
@@ -33,14 +29,11 @@
       "name": "iconbox",
       "url": "%theme_url%/blocks/iconbox/"
     },{
-      "name": "medialib",
-      "url": "%theme_url%/blocks/medialib/"
-    },{
       "name": "portfolio",
       "url": "%theme_url%/blocks/portfolio/"
     },{
       "name": "offered",
-      "url": "%theme_url%/blocks/offer/"
+      "url": "%theme_url%/blocks/offered/"
     },{
       "name": "features",
       "url": "%theme_url%/blocks/features/"

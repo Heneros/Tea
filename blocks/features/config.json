@@ -23,18 +23,18 @@
       "settings": [{
           "name": "text",
           "label": "Text",
-          "type": "text",
+          "type": "textarea",
           "placeholder": "Text"
         }]
     },{
       "name": "slider",
       "label": "Slider",
       "type": "accordion",
-      "settings":[{
-          "name": "image",
-          "label": "Image",
-          "type": "image"
-      }]
+      "settings": [{
+         "name": "image",
+         "label": "Image",
+         "type": "image"
+        }]
     }
   ],
   "defaults": {
@@ -54,18 +54,19 @@
         "text": "Nec feugiat nisl pretium fusce id velit ut tortor pretium.",
         "order": 4
     }],
-      "slider":[{
-       "image": "%block_url(medialib)%/assets/img/about1.jpg",
+
+    "slider":[{
+     "image": "%block_url%/assets/img/about1.jpg",
        "order": 1
     },{
-      "image": "%block_url(medialib)%/assets/img/about2.jpg",
+    "image": "%block_url%/assets/img/about2.jpg",
       "order": 2
     },{
-      "image": "%block_url(medialib)%/assets/img/about1.jpg",
+    "image": "%block_url%/assets/img/about1.jpg",
       "order": 3
     },{
-      "image": "%block_url(medialib)%/assets/img/about2.jpg",
+     "image": "%block_url%/assets/img/about2.jpg",
       "order": 4
     }]
   }
-}
+} 
