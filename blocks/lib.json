@@ -15,13 +15,13 @@
     },{
       "id": "offered",
       "label": "Offered",
-      "position": 4
+      "position": 3
     },{
       "id": "features",
       "label": "Features",
-      "position": 5
+      "position": 4
     }
-  ],
+],
   "blocks": [{
       "name": "mainblock",
       "url": "%theme_url%/blocks/mainblock/"

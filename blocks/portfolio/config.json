@@ -41,7 +41,7 @@
     "header": "Featured Works",
     "works": [{
         "title": "Lorem ipsum dolor",
-        "image": "%block_url%/img/work1.jpg",
+        "image": "%block_url(medialib)%/assets/img/work1.jpg",
         "text": "Category",
         "link": "#",
         "order": 1
@@ -75,6 +75,7 @@
         "text": "Category",
         "link": "#",
         "order": 6
-    }]
+    }
+  ]
   }
 }
