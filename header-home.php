@@ -32,8 +32,8 @@
 					<!-- Logo -->
            
 						<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>" >
-            <img  class="logo-alt" src="https://gc.onliner.by/images/logo/onliner_logo.v3@2x.png?token=1543935833">
-            <img  class="logo" src="https://gc.onliner.by/images/logo/onliner_logo.v3@2x.png?token=1543935833">
+            <img  class="logo" src="<?php echo get_template_directory_uri();?>/img/logo.png">
+            <img  class="logo-alt" src="<?php echo get_template_directory_uri();?>/img/logo-alt.png">
 						</a>
 					<!-- /Logo -->
 

@@ -24,7 +24,13 @@
 				<!-- /why choose us content -->
 
 				<!-- About slider -->
-
+				<div class="col-md-6">
+					<div id="about-slider" class="owl-carousel owl-theme">
+				{{#each_with_sort slider "order"}}
+						<img class="img-responsive" src="{{image}}" alt="">
+		    {{/each_with_sort}}
+					</div>
+				</div>
 				<!-- /About slider -->
 
 			</div>
@@ -35,4 +41,3 @@
 
 	</div>
 	<!-- /Why Choose Us -->
-
