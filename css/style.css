@@ -362,7 +362,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     .has-dropdown {
         position: relative;
     }
-    .has-dropdown>a:before {
+    .main-nav .nav .navbar-nav .navbar-right.has-dropdown>a:before {
         font-family: 'FontAwesome';
         content: "\f054";
         font-size: 6px;
@@ -374,7 +374,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         -webkit-transition: 0.2s transform;
         transition: 0.2s transform;
     }
-    .dropdown {
+   .main-nav .nav .navbar-nav .navbar-right .dropdown {
         position: absolute;
         right: -50%;
         top: 0;
@@ -423,7 +423,9 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     }
 }
 
-
+.about-slider{
+    width: 65%;
+}
 /* -- mobile nav -- */
 
 @media only screen and (max-width: 767px) {
