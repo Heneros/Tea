@@ -19,7 +19,11 @@
     },{
       "id": "features",
       "label": "Features",
-      "position": 3
+      "position": 4
+    },{
+      "id": "numbers",
+      "label": "Numbers",
+      "position": 5
     }
 ],
   "blocks": [{
@@ -37,6 +41,9 @@
     },{
       "name": "features",
       "url": "%theme_url%/blocks/features/"
+    },{
+      "name": "numbers",
+      "url": "%theme_url%/blocks/numbers/"
     }
   ]
 }

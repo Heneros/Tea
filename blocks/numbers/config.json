@@ -1,0 +1,58 @@
+{
+    "groups": "numbers",
+    "template": "template.hbs",
+    "settings": [{
+        "name": "block_id",
+        "label": "Block's id",
+        "type": "text"
+    },{
+        "name": "image",
+        "label": "Image",
+        "type": "image"
+    },{
+      "name": "number",
+      "label": "Number",
+      "type": "accordion",
+      "settings": [{
+          "name": "icon",
+          "label": "Icon",
+          "type": "icon"
+        },{
+          "name": "text",
+          "label": "Text",
+          "type": "text",
+          "placeholder": "text"
+        },{
+          "name": "title",
+          "label": "Title",
+          "type": "text",
+          "placeholder": "Title"
+        }
+      ]
+    }],
+    "defaults": {
+    "block_id": "numbers",
+    "image": "%block_url%/img/background2.jpg",
+    "number": [{
+        "icon":  "fa fa-users",
+        "title": "451",
+        "text": "Happy clients",
+        "order": 1
+    },{
+        "icon":  "fa fa-trophy",
+        "title": "12",
+        "text": "Awards won",
+        "order": 2
+    },{
+        "icon":  "fa fa-coffee",
+        "title": "154",
+        "text": "Cups of Coffee",
+        "order": 3
+    },{     
+        "icon":  "fa fa-file",
+        "title": "45",
+        "text": "Projects completed",
+        "order": 4
+    }]
+  }
+}

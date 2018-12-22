@@ -1,0 +1,33 @@
+	<!-- Numbers -->
+	<div id="{{block_id}}" class="section sm-padding">
+
+		<!-- Background Image -->
+		<div class="bg-img" style="background-image: url('{{image}}');">
+			<div class="overlay"></div>
+		</div>
+		<!-- /Background Image -->
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+{{#each_with_sort number "order"}}
+				<!-- number -->
+				<div class="col-sm-3 col-xs-6">
+					<div class="number">
+						<i class="{{icon}}"></i>
+						<h3 class="white-text"><span class="counter">{{title}}</span></h3>
+						<span class="white-text">{{text}}</span>
+					</div>
+				</div>
+				<!-- /number -->
+{{/each_with_sort}}
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Numbers -->
