@@ -1,0 +1,52 @@
+{
+  "groups": "pricing",
+  "template": "template.hbs",
+  "settings": [
+    {
+      "name": "block_id",
+      "label": "Block's id",
+      "type": "text"
+    },{
+        "name": "header",
+        "label": "Block's header",
+        "type": "text",
+        "placeholder": "Header"
+    },{
+      "name": "pricing",
+      "label": "Pricing",
+      "type": "accordion",
+      "viewType": "flip",
+      "settings": [
+      {
+          "name": "text",
+          "label": "Text",
+          "type": "textarea",
+          "placeholder": "Text"
+        },{
+          "name": "text_price",
+          "label": "text Price",
+          "type": "text",
+          "placeholder": "Text price"
+        }
+      ]
+    }
+  ],
+  "defaults": {
+    "block_id": "pricing",
+    "header": "Pricing Table",
+    "pricing": [{
+        "title": "Basic plan",
+        "text_price": "$9",
+        "order": 1
+    },{
+        "title": "Silver plan",
+        "text_price": "$19",
+        "order": 2
+    },{
+        "title": "Gold plan",
+        "text_price": "$39",
+        "order": 3
+    }
+  ]
+  }
+}

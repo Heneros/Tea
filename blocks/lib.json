@@ -24,6 +24,10 @@
       "id": "numbers",
       "label": "Numbers",
       "position": 5
+    },{
+      "id": "pricing",
+      "label": "Pricing",
+      "position": 6
     }
 ],
   "blocks": [{
@@ -44,6 +48,9 @@
     },{
       "name": "numbers",
       "url": "%theme_url%/blocks/numbers/"
+    },{
+      "name": "pricing",
+      "url": "%theme_url%/blocks/pricing/"
     }
   ]
 }
