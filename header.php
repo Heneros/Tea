@@ -45,7 +45,7 @@
 							<?php  
         $args = array(
         'theme_location'=> 'menu-1',
-        'container' => false,
+        'container' => 'ul',
         'menu_class'=> 'main-nav nav navbar-nav navbar-right ', 
         'items_wrap'  => '<ul id="%1$s" class="%2$s">%3$s</ul>',
         'walker' => new Tea_Navwalker(),

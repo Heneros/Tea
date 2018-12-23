@@ -20,7 +20,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> >
 	<!-- Header -->
 		<!-- Nav -->
 
@@ -58,3 +58,13 @@
 			</div>
 		</nav>
 		<!-- /Nav -->
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div class="preloader">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
