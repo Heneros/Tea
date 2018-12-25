@@ -1,5 +1,5 @@
-(function($) {
-	"use strict"
+$(document).ready(function () {
+
 
 	///////////////////////////
 	// Preloader
@@ -9,10 +9,8 @@
 
 	///////////////////////////
 	// Scrollspy
-	$('body').scrollspy({
-		target: '#nav',
-		offset: $(window).height() / 2
-	});
+$('body').scrollspy({ target: '#nav', offset: 50 });
+
 
 	///////////////////////////
 	// Smooth scroll
@@ -74,20 +72,20 @@
 		animateOut: 'fadeOut'
 	});
 
-	$('#testimonial-slider').owlCarousel({
-		loop:true,
-		margin:15,
-		dots : true,
-		nav: false,
-		autoplay : true,
-		responsive:{
-			0: {
-				items:1
-			},
-			992:{
-				items:2
-			}
-		}
-	});
+	// $('#testimonial-slider').owlCarousel({
+	// 	loop:true,
+	// 	margin:15,
+	// 	dots : true,
+	// 	nav: false,
+	// 	autoplay : true,
+	// 	responsive:{
+	// 		0: {
+	// 			items:1
+	// 		},
+	// 		992:{
+	// 			items:2
+	// 		}
+	// 	}
+	// });
 
-})(jQuery);
+});

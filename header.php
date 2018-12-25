@@ -30,7 +30,8 @@
 					<!-- Logo -->
            
 						<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>" >
-      <img  src="https://gc.onliner.by/images/logo/onliner_logo.v3@2x.png?token=1543935833">
+            <img  class="logo" src="<?php echo get_template_directory_uri();?>/img/logo.png">
+            <img  class="logo-alt" src="<?php echo get_template_directory_uri();?>/img/logo-alt.png">
 						</a>
 					<!-- /Logo -->
 
@@ -45,10 +46,10 @@
 							<?php  
         $args = array(
         'theme_location'=> 'menu-1',
-        'container' => 'ul',
+        'container' => false,
         'menu_class'=> 'main-nav nav navbar-nav navbar-right ', 
         'items_wrap'  => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-        'walker' => new Tea_Navwalker(),
+        'walker' => new Tea_Navwalker()
         );
            wp_nav_menu($args);?>
 				<!--  Main navigation  -->
@@ -57,6 +58,14 @@
 			</div>
 		</nav>
 		<!-- /Nav -->
+	<div id="preloader">
+		<div class="preloader">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
 
 <!-- 	</header>
  -->	<!-- /Header -->

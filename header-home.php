@@ -16,7 +16,9 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<?php wp_head(); ?>
 </head>
 
@@ -48,7 +50,7 @@
 				        <?php  
         $args = array(
         'theme_location'=> 'menu-1',
-        'container' => false,
+        'container' => true,
         'menu_class'=> 'main-nav nav navbar-nav navbar-right ', 
         'items_wrap'  => '<ul id="%1$s" class="%2$s">%3$s</ul>',
         'walker' => new Tea_Navwalker(),
@@ -57,9 +59,7 @@
         ?>
 			</div>
 		</nav>
-		<!-- /Nav -->
-
-	<!-- Preloader -->
+		<!-- /Nav -->	<!-- Preloader -->
 	<div id="preloader">
 		<div class="preloader">
 			<span></span>
