@@ -1,0 +1,56 @@
+{
+  "groups": "testimonial",
+  "template": "template.hbs",
+  "settings": [{
+      "name": "block_id",
+      "label": "Block's id",
+      "type": "text"
+    },{
+          "name": "image",
+          "label": "image",
+          "type": "image"
+        },{
+      "name": "slider",
+      "label": "Slider",
+      "type": "accordion",
+      "settings": [{
+          "name": "image_slider",
+          "label": "image",
+          "type": "image"
+        },{
+          "name": "title_name",
+          "label": "title name",
+          "type": "text",
+          "placeholder": "Title name"
+        },{
+          "name": "title_job",
+          "label": "title jpb",
+          "type": "text",
+          "placeholder": "Title job"
+        },{
+          "name": "text",
+          "label": "Text",
+          "type": "text",
+          "placeholder": "Text"
+        }
+      ]
+    }
+  ],
+  "defaults": {
+    "block_id": "testimonial",
+    "image": "%block_url%/img/background3.jpg",
+        "slider": [{
+        "image_slider": "%block_url%/img/perso1.jpg",
+        "title_name": "John Doe",
+        "title_job": "Web Designer",
+        "text": "Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris.",
+        "order": 1
+    },{
+        "image_slider": "%block_url%/img/perso2.jpg",
+        "title_name": "John Doe",
+        "title_job": "Web Designer",
+        "text": "Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris.",
+        "order": 2
+ }
+]}
+}

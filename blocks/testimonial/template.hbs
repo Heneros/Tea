@@ -1,0 +1,42 @@
+	<!-- Testimonial -->
+	<div id="{{block_id}}" class="section md-padding">
+
+		<!-- Background Image -->
+		<div class="bg-img" style="background-image: url('{{image}}');">
+			<div class="overlay"></div>
+		</div>
+		<!-- /Background Image -->
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Testimonial slider -->
+				<div class="col-md-10 col-md-offset-1">
+					<div id="testimonial-slider" class="owl-carousel owl-theme">
+			{{#each_with_sort slider "order"}}
+						<!-- testimonial -->
+						<div class="testimonial">
+							<div class="testimonial-meta">
+								<img src="{{image_slider}}" alt="">
+								<h3 class="white-text">{{title_name}}</h3>
+								<span>{{title_job}}</span>
+							</div>
+							<p class="white-text">{{text}}</p>
+						</div>
+						<!-- /testimonial -->
+			{{/each_with_sort}}
+					</div>
+				</div>
+				<!-- /Testimonial slider -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Testimonial -->

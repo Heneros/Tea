@@ -28,6 +28,10 @@
       "id": "pricing",
       "label": "Pricing",
       "position": 6
+    },{
+      "id": "testimonial",
+      "label": "testimonial",
+      "position": 7
     }
 ],
   "blocks": [{
@@ -51,6 +55,9 @@
     },{
       "name": "pricing",
       "url": "%theme_url%/blocks/pricing/"
+    },{
+      "name": "testimonial",
+      "url": "%theme_url%/blocks/testimonial/"
     }
   ]
 }

@@ -50,7 +50,7 @@
 				        <?php  
         $args = array(
         'theme_location'=> 'menu-1',
-        'container' => true,
+        'container' => false,
         'menu_class'=> 'main-nav nav navbar-nav navbar-right ', 
         'items_wrap'  => '<ul id="%1$s" class="%2$s">%3$s</ul>',
         'walker' => new Tea_Navwalker(),
@@ -59,7 +59,10 @@
         ?>
 			</div>
 		</nav>
-		<!-- /Nav -->	<!-- Preloader -->
+		<!-- /Nav -->
+			<!-- Back to top -->
+	<div id="back-to-top"></div>
+			<!-- Preloader -->
 	<div id="preloader">
 		<div class="preloader">
 			<span></span>
