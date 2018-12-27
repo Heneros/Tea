@@ -72,20 +72,20 @@ $('body').scrollspy({ target: '#nav', offset: 50 });
 		animateOut: 'fadeOut'
 	});
 
-	// $('#testimonial-slider').owlCarousel({
-	// 	loop:true,
-	// 	margin:15,
-	// 	dots : true,
-	// 	nav: false,
-	// 	autoplay : true,
-	// 	responsive:{
-	// 		0: {
-	// 			items:1
-	// 		},
-	// 		992:{
-	// 			items:2
-	// 		}
-	// 	}
-	// });
+	$('#testimonial-slider').owlCarousel({
+		loop:true,
+		margin:15,
+		dots : true,
+		nav: false,
+		autoplay : true,
+		responsive:{
+			0: {
+				items:1
+			},
+			992:{
+				items:2
+			}
+		}
+	});
 
 });

@@ -10,7 +10,7 @@
           "label": "image",
           "type": "image"
         },{
-      "name": "slider",
+      "name": "slider_sec",
       "label": "Slider",
       "type": "accordion",
       "settings": [{
@@ -39,7 +39,7 @@
   "defaults": {
     "block_id": "testimonial",
     "image": "%block_url%/img/background3.jpg",
-        "slider": [{
+        "slider_sec": [{
         "image_slider": "%block_url%/img/perso1.jpg",
         "title_name": "John Doe",
         "title_job": "Web Designer",

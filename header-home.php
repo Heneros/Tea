@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
 	<?php wp_head(); ?>
 </head>
 
@@ -63,7 +65,7 @@
 			<!-- Back to top -->
 	<div id="back-to-top"></div>
 			<!-- Preloader -->
-	<div id="preloader">
+<!-- 	<div id="preloader">
 		<div class="preloader">
 			<span></span>
 			<span></span>
@@ -71,3 +73,4 @@
 			<span></span>
 		</div>
 	</div>
+ -->

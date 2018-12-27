@@ -1,0 +1,44 @@
+<!-- Team -->
+	<div id="{{block_id}}" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">{{header}}</h2>
+				</div>
+				<!-- /Section header -->
+     {{#each_with_sort team "order"}}
+				<!-- team -->
+				<div class="col-sm-4">
+					<div class="team">
+						<div class="team-img">
+							<img class="img-responsive" src="{{image}}" alt="">
+							<div class="overlay">
+								<div class="team-social">
+									<a href="{{link_f}}"><i class="{{icon_facebok}}"></i></a>
+									<a href="{{link_g}}"><i class="{{icon_google}}"></i></a>
+									<a href="{{link_t}}"><i class="{{icon_twitter}}"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="team-content">
+							<h3>{{title}}</h3>
+							<span>{{text}}</span>
+						</div>
+					</div>
+				</div>
+				<!-- /team -->
+	{{/each_with_sort}}
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Team -->

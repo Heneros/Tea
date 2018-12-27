@@ -32,6 +32,10 @@
       "id": "testimonial",
       "label": "testimonial",
       "position": 7
+    },{
+      "id": "team",
+      "label": "Team",
+      "position": 8
     }
 ],
   "blocks": [{
@@ -58,6 +62,9 @@
     },{
       "name": "testimonial",
       "url": "%theme_url%/blocks/testimonial/"
+    },{
+      "name": "team",
+      "url": "%theme_url%/blocks/team/"
     }
   ]
 }
