@@ -1,7 +1,8 @@
 {
   "groups": "team",
   "template": "template.hbs",
-  "settings": [{
+  "settings": [
+    {
       "name": "block_id",
       "label": "Block's id",
       "type": "text"
@@ -16,47 +17,48 @@
       "type": "accordion",
       "viewType": "flip",
       "settings": [{
-          "name": "image",
-          "label": "image",
+          "name":"image",
+          "label": "Image",
           "type": "image"
         },{
-          "name": "icon_facebok",
-          "label": "Icon ",
-          "type": "icon"
-        },{
-          "name": "icon_google",
+          "name": "icon_fa",
           "label": "Icon",
           "type": "icon"
         },{
-          "name": "icon_twitter",
-          "label": "Icon ",
+          "name": "icon_go",
+          "label": "Icon",
           "type": "icon"
         },{
-          "name": "link_f",
-          "label": "Link facebook",
-          "type": "text",
-          "placeholder": "Link "
-        },{
-          "name": "link_g",
-          "label": "Link google",
-          "type": "text",
-          "placeholder": "Link "
-        },{
-          "name": "link_t",
-          "label": "Link twitter",
-          "type": "text",
-          "placeholder": "Link "
+          "name": "icon_twit",
+          "label": "Icon",
+          "type": "icon"
         },{
           "name": "title",
-          "label": "title",
+          "label": "Title",
           "type": "text",
-          "placeholder": "Title"
+          "placeholder": "Text"
         },{
           "name": "text",
-          "label": "text",
+          "label": "Text",
           "type": "text",
-          "placeholder": "text"
-        }]
+          "placeholder": "Text"
+        },{
+          "name": "link_fa",
+          "label": "Link Facebook",
+          "type": "text",
+          "placeholder": "Text"
+        },{
+          "name": "link_go",
+          "label": "Link Google",
+          "type": "text",
+          "placeholder": "Text"
+        },{
+          "name": "link_twit",
+          "label": "Link Twitter",
+          "type": "text",
+          "placeholder": "Text"
+        }
+      ]
     }
   ],
   "defaults": {
@@ -64,36 +66,36 @@
     "header": "Our Team",
     "team": [{
         "image": "%block_url%/img/team1.jpg",
-        "link_f": "#",
-        "link_g": "#",
-        "link_t": "#",
-        "icon_facebook": "fa fa-facebook",
-        "icon_google": "fa fa-google-plus",
-        "icon_twitter": "fa fa-twitter",
+        "icon_fa": "fa fa-facebook",
+        "icon_go": "fa fa-google-plus",
+        "icon_twit": "fa fa-twitter",
         "title": "John Doe",
         "text": "Web Designer",
+        "link_fa": "#",
+        "link_go": "#",
+        "link_twit": "#",
         "order": 1
     },{
-       "image": "%block_url%/img/team2.jpg",
-       "link_f": "#",
-       "link_g": "#",
-       "link_t": "#",
-        "icon_facebook": "fa fa-facebook",
-        "icon_google": "fa fa-google-plus",
-        "icon_twitter": "fa fa-twitter",
+        "image": "%block_url%/img/team2.jpg",
+        "icon_fa": "fa fa-facebook",
+        "icon_go": "fa fa-google-plus",
+        "icon_twit": "fa fa-twitter",
         "title": "John Doe",
         "text": "Web Designer",
+        "link_fa": "#",
+        "link_go": "#",
+        "link_twit": "#",
         "order": 2
     },{
         "image": "%block_url%/img/team3.jpg",
-        "link_f": "#",
-        "link_g": "#",
-        "link_t": "#",
-        "icon_facebook": "fa fa-facebook",
-        "icon_google": "fa fa-google-plus",
-        "icon_twitter": "fa fa-twitter",
-        "title":  "John Doe",
+        "icon_fa": "fa fa-facebook",
+        "icon_go": "fa fa-google-plus",
+        "icon_twit": "fa fa-twitter",
+        "title": "John Doe",
         "text": "Web Designer",
+        "link_fa": "#",
+        "link_go": "#",
+        "link_twit": "#",
         "order": 3
     }
   ]

@@ -1,5 +1,5 @@
-$(document).ready(function () {
-
+(function($) {
+	"use strict"
 
 	///////////////////////////
 	// Preloader
@@ -10,8 +10,6 @@ $(document).ready(function () {
 	///////////////////////////
 	// Scrollspy
 $('body').scrollspy({ target: '#nav', offset: 50 });
-
-
 	///////////////////////////
 	// Smooth scroll
 	$("#nav .main-nav a[href^='#']").on('click', function(e) {
@@ -88,4 +86,4 @@ $('body').scrollspy({ target: '#nav', offset: 50 });
 		}
 	});
 
-});
+})(jQuery);

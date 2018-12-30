@@ -16,8 +16,7 @@
       "label": "Pricing",
       "type": "accordion",
       "viewType": "flip",
-      "settings": [
-      {
+      "settings": [{
           "name": "text",
           "label": "Text",
           "type": "textarea",
