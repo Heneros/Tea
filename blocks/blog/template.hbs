@@ -1,0 +1,45 @@
+	<!-- Blog -->
+	<div id="{{block_id}}" class="section md-padding bg-grey">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">{{header}}</h2>
+				</div>
+				<!-- /Section header -->
+			{{#each_with_sort blog "order"}}
+				<!-- blog -->
+				<div class="col-md-4">
+					<div class="blog">
+						<div class="blog-img">
+							<img class="img-responsive" src="{{image}}" alt="">
+						</div>
+						<div class="blog-content">
+							<ul class="blog-meta">
+								<li><i class="{{icon_user}}"></i>{{user}}</li>
+								<li><i class="{{icon_clock}}"></i>{{date}}</li>
+								<li><i class="{{icon_comments}}"></i>{{comment}}</li>
+							</ul>
+							<h3>{{title}}</h3>
+							<p>{{text}}</p>
+							<a href="blog-single.html">Read more</a>
+						</div>
+					</div>
+				</div>
+				<!-- /blog -->
+			{{/each_with_sort}}
+
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Blog -->

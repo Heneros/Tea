@@ -1,0 +1,106 @@
+{
+  "groups": "blog",
+  "template": "template.hbs",
+  "settings": [
+    {
+      "name": "block_id",
+      "label": "Block's id",
+      "type": "text"
+    },{
+        "name": "header",
+        "label": "Block's header",
+        "type": "text",
+        "placeholder": "Header"
+    },{
+      "name": "blog",
+      "label": "Blog",
+      "type": "accordion",
+      "settings": [{
+          "name": "image",
+          "label": "image",
+          "type": "image"
+           },{
+          "name": "icon_user",
+          "label": "icon",
+          "type": "icon"
+           },{
+          "name": "icon_clock",
+          "label": "Icon clock",
+          "type": "icon"
+        },{
+          "name": "icon_comments",
+          "label": "Icon Comments",
+          "type": "icon"
+        },{
+          "name": "icon_comments",
+          "label": "Icon Comments",
+          "type": "icon"
+        },{
+          "name": "user",
+          "label": "User",
+          "type": "text",
+          "placeholder": "User"
+        },{
+          "name": "date",
+          "label": "Date",
+          "type": "text",
+          "placeholder": "date"
+        },{
+          "name": "comment",
+          "label": "Comment",
+          "type": "text",
+          "placeholder": "comment"
+        },{
+          "name": "title",
+          "label": "Title",
+          "type": "text",
+          "placeholder": "title"
+        },{
+          "name": "text",
+          "label": "Text",
+          "type": "text",
+          "placeholder": "text"
+        }
+      ]
+    }
+  ],
+  "defaults": {
+    "block_id": "blog",
+    "header": "Recents news",
+    "blog": [{
+        "image": "%block_url%/img/blog1.jpg",
+        "icon_user": "fa fa-user",
+        "icon_clock": "fa fa-clock-o",
+        "icon_comments": "fa fa-comments",
+        "user": "John Doe",
+        "date": "18 oct",
+        "comment": "34",
+        "title": "Molestie at elementum eu facilisis sed odio",
+        "text": "Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.",
+        "order": 1
+    },{
+        "image": "%block_url%/img/blog2.jpg",
+        "icon_user":"fa fa-user",
+        "icon_clock": "fa fa-clock-o",
+        "icon_comments": "fa fa-comments",
+        "user": "John Doe",
+        "date": "18 oct",
+        "comment": "34",
+        "title": "Molestie at elementum eu facilisis sed odio",
+        "text": "Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.",
+        "order": 2
+    },{
+        "image": "%block_url%/img/blog3.jpg",
+        "icon_user":"fa fa-user",
+        "icon_clock": "fa fa-clock-o",
+        "icon_comments": "fa fa-comments",
+        "user": "John Doe",
+        "date": "18 oct",
+        "comment": "34",
+        "title": "Molestie at elementum eu facilisis sed odio",
+        "text": "Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.",
+        "order": 3
+    }
+  ]
+  }
+}
