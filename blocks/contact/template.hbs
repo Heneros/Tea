@@ -1,0 +1,46 @@
+	<!-- Contact -->
+	<div id="{{block_id}}" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section-header -->
+				<div class="section-header text-center">
+					<h2 class="title">{{header}}</h2>
+				</div>
+				<!-- /Section-header -->
+{{#each_with_sort contact "order"}}
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="{{icon}}"></i>
+						<h3>{{title}}</h3>
+						<p>{{text}}</p>
+					</div>
+				</div>
+				<!-- /contact -->
+{{/each_with_sort}}
+
+				<!-- contact form -->
+				<div class="col-md-8 col-md-offset-2">
+					<form class="contact-form">
+						<input type="text" class="input" placeholder="Name">
+						<input type="email" class="input" placeholder="Email">
+						<input type="text" class="input" placeholder="Subject">
+						<textarea class="input" placeholder="Message"></textarea>
+						<button class="main-btn">{{btn}}</button>
+					</form>
+				</div>
+				<!-- /contact form -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Contact -->

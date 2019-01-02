@@ -40,6 +40,10 @@
       "id": "blog",
       "label": "Blog",
       "position": 9
+    },{
+      "id": "contact",
+      "label": "Contact",
+      "position": 10
     }
 ],
   "blocks": [{
@@ -72,6 +76,9 @@
     },{
       "name": "blog",
       "url": "%theme_url%/blocks/blog/"
+    },{
+      "name": "contact",
+      "url": "%theme_url%/blocks/contact/"
     }
   ]
 }
