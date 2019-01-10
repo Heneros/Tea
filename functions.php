@@ -1,4 +1,8 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+require('SMTP.php');
+require('PHPMailer.php');
 /**
  * tea functions and definitions
  *
@@ -143,6 +147,9 @@ add_action( 'widgets_init', 'tea_widgets_init' );
  /**
  * Enqueue scripts and styles.
  */
+function tea_form(){
+	
+}
 function tea_scripts() {
 	wp_enqueue_style( 'tea-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri(). '/css/bootstrap.min.css', array("tea-style") );
