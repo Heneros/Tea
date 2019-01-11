@@ -1,0 +1,80 @@
+
+ <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+
+	<!-- Contact -->
+	<div id="{{block_id}}" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section-header -->
+				<div class="section-header text-center">
+					<h2 class="title">{{header}}</h2>
+				</div>
+				<!-- /Section-header -->
+{{#each_with_sort contact "order"}}
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="{{icon}}"></i>
+						<h3>{{title}}</h3>
+						<p>{{text}}</p>
+					</div>
+				</div>
+				<!-- /contact -->
+{{/each_with_sort}}
+
+				<!-- contact form -->
+				<div class="col-md-8 col-md-offset-2">
+					<form action="" name="myform" id="myform"  method="POST" class="contact-form">
+						<input type="text" class="input" id="name" name="user_name" placeholder="Name" value="">
+           <input type="text" class="input" id="email" name="user_email" id="email" size="30" value="" value=""/> 
+						<input type="text" class="input" name="user_subject" placeholder="Subject" value="">
+						<textarea class="input" name="textarea" placeholder="Message" value=""></textarea>
+						<button  type="submit" name="submit" value="Submit" class="main-btn">{{btn}}</button>
+					</form>
+					   <div id="results"><div></div>
+				</div>
+				<!-- /contact form -->
+
+			</div>
+			<!-- /Row -->
+
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Contact -->
+	  {{!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> --}}
+
+ <script>
+jQuery(document).ready(function(){
+	  
+
+jQuery(".contact-form").validate({
+    debug: false,
+		rules:{
+			email: {
+		required: true,
+		email: true
+       }
+		},
+		messages:{
+			      name: "Please let us know who you are.",
+            email: "A valid email will help us get in touch with you.",
+						subject: "Please enter this field",
+						textarea: "Please enter this field",
+		},
+        submitHandler: function(form) {
+            jQuery.post('/wp-admin/admin-ajax.php', jQuery("#myform").serialize(), function(data) {
+                jQuery('#results').html(data);
+            });
+        }
+ 	});
+ });
+
+ </script>

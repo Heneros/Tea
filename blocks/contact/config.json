@@ -1,0 +1,61 @@
+{
+  "groups": "contact",
+  "template": "template.hbs",
+  "settings": [{
+      "name": "block_id",
+      "label": "Block's id",
+      "type": "text"
+    },{
+        "name": "header",
+        "label": "Block's header",
+        "type": "text",
+        "placeholder": "Header"
+        },{
+         "name": "btn",
+        "label": "Button",
+        "type": "text",
+        "placeholder": "button"
+        },{
+      "name": "contact",
+      "label": "Contact",
+      "type": "accordion",
+      "settings": [{
+          "name": "icon",
+          "label": "Icon",
+          "type": "icon"
+        },{
+          "name": "title",
+          "label": "Title",
+          "type": "text",
+          "placeholder": "Title name"
+        },{
+          "name": "text",
+          "label": "Text",
+          "type": "text",
+          "placeholder": "Text"
+        }
+      ]
+    }
+  ],
+  "defaults": {
+    "block_id": "contact",
+    "header": "Get in touch",
+    "btn":"Send message",
+        "contact": [{
+        "icon": "fa fa-phone",
+        "title": "Phone",
+        "text": "512-421-3940",
+        "order": 1
+    },{
+        "icon": "fa fa-envelope",
+        "title": "Email",
+        "text": "email@support.com",
+        "order": 2
+ },{
+        "icon": "fa fa-map-marker",
+        "title": "Address",
+        "text": "1739 Bubby Drive",
+        "order": 3
+ }
+]}
+}

@@ -1,9 +1,9 @@
 
-    /* .navbar-nav>li>a {
+    .navbar-nav>li>a {
     padding-top: 15px !important;
     padding-bottom: 15px !important;
-} */
-/* .dropdown-menu>li>a {
+}
+.dropdown-menu>li>a {
     display: block;
     padding: 3px 20px;
     clear: both;
@@ -11,15 +11,9 @@
     line-height: 1.42857143;
     color: #333 !important;
     white-space: nowrap;
-  } */
-/* body > .nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+  }
+body > .nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
     background-color: transparent !important;
-  } */
-  .navbar-nav>li>.dropdown-menu li>a {
-    margin-top: 0;
-    display: none;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
   }
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)

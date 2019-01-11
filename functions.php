@@ -1,8 +1,4 @@
 <?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-require('SMTP.php');
-require('PHPMailer.php');
 /**
  * tea functions and definitions
  *
@@ -95,6 +91,12 @@ add_action( 'after_setup_theme', 'tea_setup' );
  *
  * @global int $content_width
  */
+function myform(){
+	echo "Form submitted successfully: <br>Your name is <b>".$_POST['name']."</b> and your email is <b>".$_POST['email']."</b><br>"; 
+}
+add_action('wp_ajax_myform', 'myform');
+
+
 function tea_content_width() {
 	// This variable is intended to be overruled from themes.
 	// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
@@ -147,9 +149,6 @@ add_action( 'widgets_init', 'tea_widgets_init' );
  /**
  * Enqueue scripts and styles.
  */
-function tea_form(){
-	
-}
 function tea_scripts() {
 	wp_enqueue_style( 'tea-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri(). '/css/bootstrap.min.css', array("tea-style") );
@@ -162,9 +161,10 @@ function tea_scripts() {
 	wp_enqueue_script( 'tea-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	wp_enqueue_script( 'tea-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 	
- 	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '', true );
- 	wp_enqueue_script( 'owl-carousel-js', get_template_directory_uri() . '/js/owl.carousel.min.js', array('jquery'), '', true );
-	wp_enqueue_script( 'magnific-popup-js', get_template_directory_uri() . '/js/jquery.magnific-popup.js', array('jquery'), '', true );
+	 wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '', true );
+	 wp_enqueue_script( 'validate-jquery', get_template_directory_uri() . '/js/jquery.validate.min.js', array('jquery'), '', true );
+ 	 wp_enqueue_script( 'owl-carousel-js', get_template_directory_uri() . '/js/owl.carousel.min.js', array('jquery'), '', true );
+	 wp_enqueue_script( 'magnific-popup-js', get_template_directory_uri() . '/js/jquery.magnific-popup.js', array('jquery'), '', true );
 	wp_enqueue_script( 'tea-main-js', get_template_directory_uri() . '/js/main.js', array('jquery'), '', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

@@ -1,0 +1,38 @@
+	<!-- Portfolio -->
+	<div id="{{block_id}}" class="section md-padding bg-grey">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">{{header}}</h2>
+				</div>
+				<!-- /Section header -->
+         {{#each_with_sort works "order"}}
+				<!-- Work -->
+				<div class="col-md-4 col-xs-6 work">
+					<img class="img-responsive" src="{{image}}" alt="">
+					<div class="overlay"></div>
+					<div class="work-content">
+						<span>{{text}}</span>
+						<h3>{{title}}</h3>
+						<div class="work-link">
+							<a href="{{link}}"><i class="fa fa-external-link"></i></a>
+							<a class="lightbox" href="{{image}}"><i class="fa fa-search"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- /Work -->
+    {{/each_with_sort}}
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Portfolio -->

@@ -21,6 +21,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
 
+
 	<?php wp_head(); ?>
 </head>
 
@@ -62,7 +63,6 @@
 			</div>
 		</nav>
 		<!-- /Nav -->
-		
 			<!-- Back to top -->
 	<div id="back-to-top"></div>
 			<!-- Preloader -->
