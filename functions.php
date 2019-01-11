@@ -91,10 +91,15 @@ add_action( 'after_setup_theme', 'tea_setup' );
  *
  * @global int $content_width
  */
-function myform(){
-	echo "Form submitted successfully: <br>Your name is <b>".$_POST['name']."</b> and your email is <b>".$_POST['email']."</b><br>"; 
-}
 add_action('wp_ajax_myform', 'myform');
+
+function myform(){
+
+	echo "Form submitted successfully: <br>Your name is <b>".$_POST['name']."</b> and your email is <b>".$_POST['email']."</b><br>"; 
+  wp_die();
+}
+
+
 
 
 function tea_content_width() {

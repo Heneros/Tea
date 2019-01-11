@@ -29,9 +29,9 @@
 
 				<!-- contact form -->
 				<div class="col-md-8 col-md-offset-2">
-					<form action="" name="myform" id="myform"  method="POST" class="contact-form">
-						<input type="text" class="input" id="name" name="user_name" placeholder="Name" value="">
-           <input type="text" class="input" id="email" name="user_email" id="email" size="30" value="" value=""/> 
+					<form action="" name="myform" id="myform" class="contact-form">
+						<input type="text" class="input" id="name" name="name" placeholder="Name" value="">
+           <input type="text" class="input" id="email" name="user_email"  size="30" value="" value=""/> 
 						<input type="text" class="input" name="user_subject" placeholder="Subject" value="">
 						<textarea class="input" name="textarea" placeholder="Message" value=""></textarea>
 						<button  type="submit" name="submit" value="Submit" class="main-btn">{{btn}}</button>
@@ -49,32 +49,26 @@
 
 	</div>
 	<!-- /Contact -->
-	  {{!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> --}}
+
 
  <script>
-jQuery(document).ready(function(){
-	  
+$(".submit-button").on("click", function (event) {
+        event.preventDefault();
+        var name = $("#name").val();
+        var email = $("#email").val();
+        $.ajax({
+            url: "/wp-admin/admin-ajax.php",
+            method: 'post',
+            data: {
+                action: 'ajax_order',
+                name: name,
+                email: email
 
-jQuery(".contact-form").validate({
-    debug: false,
-		rules:{
-			email: {
-		required: true,
-		email: true
-       }
-		},
-		messages:{
-			      name: "Please let us know who you are.",
-            email: "A valid email will help us get in touch with you.",
-						subject: "Please enter this field",
-						textarea: "Please enter this field",
-		},
-        submitHandler: function(form) {
-            jQuery.post('/wp-admin/admin-ajax.php', jQuery("#myform").serialize(), function(data) {
-                jQuery('#results').html(data);
-            });
-        }
- 	});
- });
+            },
+            success: function (response) {
+                $('.main-btn').html(response);
+            }
+        });
+    });
 
- </script>
+</script>	
