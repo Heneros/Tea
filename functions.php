@@ -91,14 +91,35 @@ add_action( 'after_setup_theme', 'tea_setup' );
  *
  * @global int $content_width
  */
-add_action('wp_ajax_myform', 'myform');
+function ajax_form(){
+	$name = $_REQUEST['name'];
+	$email = $_REQUEST['email'];
+	$response = '';
+	$thm  = 'Заказ';
+	$thm  = "=?utf-8?b?". base64_encode($thm) ."?=";
+	$msg = "Имя: ".$name."<br/>
+			Почта: ".$email ."<br/>";
+	$mail_to = 'punk60826@gmail.com'; 
+	$headers = "Content-Type: text/html; charset=utf-8\n";
+	$headers .= 'From: Johny' . "\r\n";
 
-function myform(){
 
-	echo "Form submitted successfully: <br>Your name is <b>".$_POST['name']."</b> and your email is <b>".$_POST['email']."</b><br>"; 
-  wp_die();
+
+	if(mail($mail_to, $thm, $msg, $headers)){
+			$response = 'Сообщение отправлено';
+	}else
+			$response = 'Soory we cant send message on '. $email;
+
+
+
+	if ( defined( 'DOING_AJAX' ) && DOING_AJAX ){
+			echo $response;
+			wp_die();
+	}
 }
 
+add_action('wp_ajax_nopriv_ajax_order', 'ajax_form' );
+add_action('wp_ajax_ajax_order', 'ajax_form' );
 
 
 
